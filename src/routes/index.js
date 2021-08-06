@@ -5,6 +5,7 @@ const productsRouter = require('./products.routes');
 const usersRouter = require('./users.routes');
 const sessionsRouter = require('./sessions.routes');
 
+const routes = express.Router();
 
 function ensureAuthenticated(request, response, next) {
     const authHeader = request.headers.authorization;
