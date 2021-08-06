@@ -32,7 +32,8 @@ try {
 routes.use(cors());
 routes.use('/sessions', sessionsRouter);
 routes.use(ensureAuthenticated);
-routes.use('/products', productsRouter);
 routes.use('/users', usersRouter);
+routes.use('/products', productsRouter);
+
 
 module.exports = routes;
